@@ -23,7 +23,7 @@ const TimeDetail = ({time,brTime}) => {
             </div>
             
             <div className="btn md:mt-12 flex justify-center items-center ">
-                <button onClick={notify} className='bg-[#5d5fef] hover:text-[#5d5fef] hover:bg-white hover:outline shadow lg:px-24 md:px-72 px-12 my-8 text-2xl text-white font-bold rounded-xl py-6 '> <FontAwesomeIcon className='mr-2' icon={faBookOpen}></FontAwesomeIcon>Activity Completed </button>
+                <button onClick={notify} className='bg-[#5d5fef] hover:text-[#5d5fef] hover:bg-white hover:outline shadow lg:px-24 md:px-64 px-8 my-8 text-2xl text-white font-bold rounded-xl py-6 '> <FontAwesomeIcon className='mr-2' icon={faBookOpen}></FontAwesomeIcon>Activity Completed </button>
                 <ToastContainer />
             </div>
         </div>
