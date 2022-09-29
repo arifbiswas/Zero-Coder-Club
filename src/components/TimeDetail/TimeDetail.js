@@ -13,17 +13,17 @@ const TimeDetail = ({time,brTime}) => {
     return (
         <div className='mt-24'>
             <h1 className='text-3xl'>Exercise Details</h1>
-            <div className='bg-[#f2f4fa] py-7 my-5 px-3 font-semibold flex justify-between items-center'>
+            <div className='bg-[#f2f4fa] py-7 my-5 px-3 font-semibold flex justify-between items-center rounded-xl'>
             <h2 className='text-2xl'>Exercise time</h2>
-            <p className='text-2xl'>{time} minute</p>
+            <p className='text-2xl text-[#9dacc1]'>{time} minute</p>
             </div>
-            <div className='bg-[#f2f4fa] py-7 my-5 px-3 font-semibold flex justify-between items-center'>
+            <div className='bg-[#f2f4fa] py-7 my-5 px-3 font-semibold flex justify-between items-center rounded-xl'>
             <h2 className='text-2xl'>Break time</h2>
-            <p className='text-2xl'>{brTime} minute</p>
+            <p className='text-2xl text-[#9dacc1]'>{brTime} minute</p>
             </div>
             
             <div className="btn md:mt-16">
-                <button onClick={notify} className='bg-[#5d5fef] md:px-32  px-12 my-8 text-2xl text-white font-bold rounded-xl py-6'> <FontAwesomeIcon className='mr-2' icon={faBookOpen}></FontAwesomeIcon>Activity Completed </button>
+                <button onClick={notify} className='bg-[#5d5fef] hover:text-[#5d5fef] hover:bg-white hover:outline shadow md:px-24  px-12 my-8 text-2xl text-white font-bold rounded-xl py-6 '> <FontAwesomeIcon className='mr-2' icon={faBookOpen}></FontAwesomeIcon>Activity Completed </button>
                 <ToastContainer />
             </div>
         </div>

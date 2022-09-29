@@ -25,7 +25,9 @@ function App() {
     <div className=" bg-[#f2f4fa]">
     <Practices items={items} timeHabdler={timeHabdler}></Practices>
     </div>
+    <div className="bg-white">
     <Sidebar time={time}></Sidebar>
+    </div>
     </div>
   );
 }

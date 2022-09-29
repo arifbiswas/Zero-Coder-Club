@@ -1,8 +1,9 @@
 .main-container{
   display: grid;
   grid-template-columns: 6fr 2fr;
-  gap: 20px;
-
+  max-width: 1700px;
+  margin: 0 auto;
+  
 }
 
 
@@ -10,7 +11,7 @@
   .main-container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    
   }
  }
 
@@ -19,7 +20,7 @@
   .main-container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    
   }
  }
 
