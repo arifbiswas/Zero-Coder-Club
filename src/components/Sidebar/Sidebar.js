@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import BreakTime from '../BreakTime/BreakTime';
 import TimeDetail from '../TimeDetail/TimeDetail';
 import Userinfo from '../Userinfo/Userinfo';
-import profile  from './profile.jpg'
+import profile  from './img/profile.jpg'
 import './Sidebar.css'
 
 const Sidebar = ({time}) => {
