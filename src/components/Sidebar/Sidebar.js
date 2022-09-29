@@ -1,13 +1,20 @@
-import { faLocation, faLocationArrow, faLocationCrosshairs, faMapLocation, faSearchLocation } from '@fortawesome/free-solid-svg-icons';
+import { faLocation, faLocationArrow, faLocationCrosshairs, faMapLocation, faRoute, faSearchLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BreakTime from '../BreakTime/BreakTime';
 import TimeDetail from '../TimeDetail/TimeDetail';
 import Userinfo from '../Userinfo/Userinfo';
 import profile  from './profile.jpg'
 import './Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = ({time}) => {
+    const [brTime,setBrTime]=useState([])
+       useEffect(()=>{
+        // console.log(brTime);
+         const oldTime = localStorage.getItem('brTime')
+        //  console.log(oldTime);
+        setBrTime(oldTime)
+       },[brTime])
     return (
         <div className='sidebar relative'>
             <div className="user  mt-14 mx-5">
@@ -19,8 +26,8 @@ const Sidebar = () => {
             </div>
             </div>
            <Userinfo></Userinfo>
-           <BreakTime></BreakTime>
-           <TimeDetail></TimeDetail>
+           <BreakTime setBrTime={setBrTime}></BreakTime>
+           <TimeDetail time={time} brTime={brTime}></TimeDetail>
             </div>
             
         </div>
