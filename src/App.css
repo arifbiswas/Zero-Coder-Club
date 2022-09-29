@@ -2,11 +2,25 @@
   display: grid;
   grid-template-columns: 6fr 2fr;
   gap: 20px;
+
 }
-@media screen and (max-width:500px) {
+
+
+@media (max-width: 576px) { 
   .main-container{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-}
+ }
+
+
+@media (min-width: 576px) and (max-width: 1000px) { 
+  .main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+ }
+
+
