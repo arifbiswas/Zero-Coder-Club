@@ -17,8 +17,9 @@ function App() {
     const [time,setTime]=useState([0])
     const timeHabdler =(id)=>{
       const selectItem = items.find(item =>item.id === id)
-      const time = selectItem.time;
-      setTime(time)
+      let newtime =parseInt(time) + parseInt(selectItem.time);
+
+      setTime(newtime)
     }
 
   return (
