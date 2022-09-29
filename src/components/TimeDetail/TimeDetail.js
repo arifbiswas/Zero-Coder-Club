@@ -31,3 +31,4 @@ const TimeDetail = ({time,brTime}) => {
 };
 
 export default TimeDetail;
+

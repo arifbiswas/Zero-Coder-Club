@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Practices from './components/Practices/Practices';
+import Questions from './components/Questions/Questions';
 import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
     }
 
   return (
-    <div className="main-container">
+   <div>
+     <div className="main-container">
     <div className=" bg-[#f2f4fa]">
     <Practices items={items} timeHabdler={timeHabdler}></Practices>
     </div>
@@ -29,6 +31,10 @@ function App() {
     <Sidebar time={time}></Sidebar>
     </div>
     </div>
+    <div className="bg-white max-w-[1700px] my-10 mx-auto ">
+    <Questions></Questions>
+    </div>
+   </div>
   );
 }
 
